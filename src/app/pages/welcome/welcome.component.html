@@ -1,0 +1,32 @@
+<a (click)="showSettings()">
+  
+  <span *ngFor='let touchTxt of text.welcomeMsg'>
+    <span  class="touchMe" *ngIf="touchTxt.lang == tomObject.language">
+      {{touchTxt.txt}}
+    </span>
+  </span>
+
+  <div class="slideshow">
+    <div class="slideshow-image" style="background-image: url('assets/images/logos/thomas_full.jpg')"></div>
+
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/1.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/2.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/3.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/4.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/5.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/6.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/7.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/8.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/9.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/10.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/11.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/12.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/13.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/14.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/15.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/16.png')"></div>
+    <div class="slideshow-image" style="background-image: url('assets/images/advertisings/17.png')"></div>
+    
+  </div>
+
+</a>

@@ -1,0 +1,129 @@
+@import 'receipt.scss';
+@import 'pay-button.scss';
+
+$main-color: rgb(255, 123, 0);
+$light-text: #ABB0BE;
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font: 14px/22px "Lato", Arial, sans-serif;
+  background: #6394F8;
+}
+
+.lighter-text {
+  color: #ABB0BE;
+}
+
+.main-color-text {
+  color: $main-color;
+}
+
+.big-text{
+    font-size: 30px;
+}
+
+.container {
+  margin: auto;
+  //width: 80%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.hide-menu{
+    visibility: hidden;
+}
+
+.total-text{
+    padding-right: 10px;
+    padding-top: 7px;
+    font-size: 18px;
+}
+
+.badge {
+    background-color: #6394F8;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.shopping-cart {
+  //margin: 20px 0;
+  //float: right;
+  background: white;
+  width: 320px;
+  //position: fixed;
+  //bottom: 0%;
+  //right: 8%;
+  border-radius: 3px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-style: outset;
+  border-color: rgb(255, 17, 0);
+  border-width: thin;
+  padding-top: 5px;
+  
+  .shopping-cart-header {
+    border-bottom: 1px solid rgb(255, 102, 0);
+    padding-bottom: 35px;
+    padding-top: 5px;
+    
+    .shopping-cart-total {
+      float: right;
+      display: flex;
+    }
+  }
+  
+  .shopping-cart-items {
+    
+    padding-top: 20px;
+
+      li {
+        margin-bottom: 18px;
+      }
+
+    img {
+      float: left;
+      margin-right: 12px;
+    }
+    
+    .item-name {
+      display: block;
+      padding-top: 10px;
+      font-size: 16px;
+    }
+    
+    .item-price {
+      color: $main-color;
+      margin-right: 8px;
+    }
+    
+    .item-quantity {
+      color: $light-text;
+    }
+  }
+   
+}
+
+.cart-icon {
+  color: #515783;
+  font-size: 24px;
+  margin-right: 7px;
+  float: left;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+

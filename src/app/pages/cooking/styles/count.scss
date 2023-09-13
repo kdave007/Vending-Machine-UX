@@ -1,0 +1,39 @@
+.count {
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 6em;
+    margin-top: -1.33em;
+    color: rgba(white, 0.5);
+
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: rgb(255, 123, 0);
+
+    -webkit-animation: countAnimation 7s infinite;
+    -moz-animation: countAnimation 7s infinite;
+    -o-animation: countAnimation 7s infinite;
+     animation: countAnimation 7s infinite;
+}
+
+@keyframes countAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes countAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes countAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes countAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}

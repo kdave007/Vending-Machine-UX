@@ -1,0 +1,38 @@
+.floating-flags{
+  position: fixed !important;
+  left: 50%;
+
+  width: 60px;
+  height: 60px;  
+  margin: 5px 5px;
+  
+  
+  .floating-flag{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #ff1e00;
+    bottom: 40%;
+    border-radius: 50%;
+    right: 20%;
+    margin: auto;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    font-size: 23px;
+    z-index: 999;
+    box-shadow: 0 10px 25px -5px rgba(244, 67, 54, 0.6);
+    cursor: pointer;
+    transition: all 0.3s;
+
+    .flag-icon{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        margin: auto;
+        bottom: 40%;
+        left: 0;
+        right: 0;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+
+
+    <div class="container">
+        <div class="shopping-cart">
+            <div class="shopping-cart-header">
+                <div class="shopping-cart-total">
+                    <span class="lighter-text total-text">Total: </span>
+    
+                    <div class="animated pulse infinite">
+                        <span class="main-color-text big-text">$4.5 USD</span>
+                    </div>
+                </div> 
+            </div>
+    
+            
+            <div class='receipt'>
+                    <img class="thomas-receipt-logo" src="assets/images/logos/tom.png">
+    
+                    <div class='paper'>
+                      <h1>A BREAKFAST LIKE NO OTHER</h1>
+                      <div class='event'>Order id: 7yVSwQAE</div>
+                      <dl>
+                        <dt>Muffin:</dt>
+                        <dd >1 USD</dd>
+                        <dt>Nutella: </dt>
+                        <dd> 1.5 USD</dd>
+                        <dt>Jelly: </dt>
+                        <dd> 2 USD</dd>
+                      </dl>
+                      <dl class='total'>
+                        <dt> <b> Subtotal: </b> &nbsp;</dt>
+                        <dd> 4.5 USD</dd>
+    
+                        <div style="text-align:center" class="cupon-container">
+                            <input (input)="onInputChange($event)" class="input cupon-input" value={{value}} placeholder="Enter coupon code" />
+                            <div class="simple-keyboard"></div>
+                        </div>                    
+    
+                        <dt> <b> Total: </b>	&nbsp;</dt>
+                        <dd> 4.5 USD</dd>
+                      </dl>
+                      <div class="thanks-txt">
+                          Visit www.thomasbreads.com
+                        </div>
+                    </div>
+            </div>     
+                <button class="pay-btn">Buy now</button>   
+        </div>
+    </div>
+
+

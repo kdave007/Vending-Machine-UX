@@ -1,0 +1,44 @@
+@import '~animate.css/animate.css';
+
+
+.floating-container{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 4.8%;
+  right: 2.5%;
+  margin: 5px 5px;
+  
+  .floating-button{
+    //border-style: inset;
+    border-width: 5px;
+    border-color: black;
+
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #ff1e00;
+    bottom: 20%;
+    border-radius: 50%;
+    right: 20%;
+    margin: auto;
+    color: white;
+    line-height: 65px;
+    text-align: center;
+    font-size: 23px;
+    z-index: 100;
+    box-shadow: 1px 1px 25px 20px rgba(244, 67, 54, 1);
+    cursor: pointer;
+    transition: all 0.3s;
+
+    .cart-icon{
+        position: absolute;
+        width: 35px;
+        height: 35px;
+        margin: auto;
+        bottom: 20%;
+        left: 0;
+        right: 0;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.main-container{
+  height: 730px!important;
+  display: flex!important;
+}
+
+.left-side{
+     width: 45%;
+     border: groove;
+}
+
+.right-side{
+     width: 55%;
+     border: groove;
+}
+.middle-container{
+     height: 77%!important;
+}
+.bottom-container{
+     border: dotted;
+     height: 20%
+}
+.states-container{
+    text-align: center;
+    background: darkgoldenrod;
+    margin: 10px;
+    height: 120px;
+}

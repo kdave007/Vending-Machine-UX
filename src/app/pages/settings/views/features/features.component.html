@@ -1,0 +1,67 @@
+<div class="features-container">
+    <nb-layout>
+        <nb-layout-column>            
+            <nb-card>
+
+                <nb-card-header>
+                    <app-nutrition-facts [flavoursInput]="flavour"></app-nutrition-facts>                
+                </nb-card-header>
+
+                <nb-card-body class="features-block">
+                    <span *ngFor="let flavour of flavours">
+                        <span *ngFor="let flavourName of flavour.name">
+
+                            <nb-card *ngIf="flavourName.lang == tomObject.language" status="warning" class="feature-card" (click)="clickedTopping(flavour.info.id)" id="{{flavour.info.id}}">
+                                <nb-card-header class="feature-content-header"> {{flavourName.txt}} </nb-card-header>
+                                
+                                <nb-card-body class="feature-content">
+                                    <img class="feature-image" src="{{flavour.preview}}">
+                                </nb-card-body>
+                                
+                                <nb-card-footer class="feature-content-price">
+                                    <div class="animated infinite pulse">${{ flavour.info.price }}</div>
+                                </nb-card-footer> 
+                            </nb-card>                            
+
+                        </span>
+                    </span>
+
+                    <span *ngFor="let toast of toasted">
+                        
+                        <span *ngFor="let toastName of toast.name">
+                            <nb-card *ngIf="toastName.lang == tomObject.language" status="danger" class="feature-card" (click)="clickedToastLevel(toast.info.id)" id="{{toast.info.id}}">
+                                <nb-card-header class="feature-content-header"> {{toastName.txt}} </nb-card-header>
+
+                                <nb-card-body class="feature-content">
+                                    <img class="feature-image" src="{{toast.preview}}">
+                                </nb-card-body>
+                            </nb-card>
+                        </span>
+
+                    </span>
+
+                    <span *ngFor="let checkoutLang of translate.checkout_btn">
+                        <nb-card *ngIf="checkoutLang.lang == tomObject.language" status="success" class="feature-card" [nbPopover]="shoppingCart" nbPopoverPlacement="right">
+                            <nb-card-header class="feature-content-header subtotal-header">
+                                {{checkoutLang.txt}}
+                            </nb-card-header>
+  
+                            <nb-card-body class="feature-content">
+                                <img class="animated infinite flash slower feature-image" src="assets/images/etc/shopping_cart.png">
+                            </nb-card-body>
+
+                            <nb-card-footer class="feature-content-subtotal-price">
+                                <div class="animated infinite pulse">Subtotal $4.5</div>
+                            </nb-card-footer> 
+                        </nb-card>
+                    </span>
+
+                    <ng-template #shoppingCart>
+                        <app-payment></app-payment>
+                    </ng-template>
+
+                </nb-card-body>
+            </nb-card>
+        </nb-layout-column>
+    </nb-layout>
+</div>

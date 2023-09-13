@@ -1,0 +1,57 @@
+:host {
+    display: block;
+    max-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;    
+  }
+
+.table-contents {
+  text-align: center;
+}  
+
+.gpio-out-card {
+  height: 18rem !important;
+}
+
+.gpio-in-card {
+  height: 15rem !important;
+}
+
+.card-row {
+  display: flex;
+  margin: 0 -0.5rem;
+  padding-top: 2%;
+}
+  
+.card-col {
+  flex: 1 0 calc(50% - 1rem);
+  margin: 0 0.5rem;
+}
+
+.exit-btn {
+  margin: 1rem !important;
+}
+
+.gpio-container {
+  display: inline-block;
+  margin: 10px
+}
+
+.pwm-container, .topping-container {
+  margin: 30px;
+  //display: flex;
+}
+
+.pwm-slider{
+  width: 70% !important;
+}
+
+.topping-slider{
+  width: 83% !important;
+}
+
+.current-pwm, .current-topping {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 30px;
+}

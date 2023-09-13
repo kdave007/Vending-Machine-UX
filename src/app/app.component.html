@@ -1,0 +1,9 @@
+<div class="floating-flags">
+    <div *ngFor="let language of languages" class="flag-container" (click)='setLanguage( language.lang )'>
+        <div [ngClass]="{'gradient-border': language.lang == tomObject.language }" id="box">
+            <img class="flag-image" src= "{{ language.img }}">
+        </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>

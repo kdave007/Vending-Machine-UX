@@ -1,0 +1,55 @@
+.thomas-receipt-logo{
+    width: 100%;
+}
+
+.receipt {
+    border: 1px dotted white;
+    border-width: 1px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .receipt h1 {
+    font-size: 100%;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+  .receipt h1,
+  .receipt .event {
+    text-align: center;
+    line-height: 1;
+  }
+  .receipt dl {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1.5em 0 0;
+  }
+  .receipt dt,
+  .receipt dd {
+    margin: 0;
+    width: 50%;
+  }
+  .receipt dd {
+    text-align: right;
+  }
+  .receipt .total {
+    margin: 0;
+  }
+  .receipt .total:before {
+    content: '-------------------';
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+  .receipt .total dt {
+    text-align: right;
+  }
+  .receipt .total dd {
+    text-align: left;
+  }
+
+  .thanks-txt{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }

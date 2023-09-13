@@ -1,0 +1,136 @@
+$finished-color: rgb(112, 197, 0);
+$in-process-color: rgb(234, 248, 42);
+
+.steps-container{
+    position: fixed;
+    bottom: 1%;
+    width: 100%;
+}
+
+.steps {
+    display: inline-block;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+
+    display: table;
+    margin: auto;
+}
+    
+.step-item {
+    background-color: #eee;
+    border: 2px solid rgb(255, 94, 0);
+    border-radius: 5px;
+    color: #888;
+    display: inline-block;
+    font: 16px/24px sans-serif;
+    padding: 2px 54px;
+    position: relative;
+    height: 105px;
+    padding-top: 35px;
+    font-size: 30px
+    //height: 50px;
+}
+
+.step-item.on {
+    background-color: $in-process-color;
+    /* border-color: #D39E12; */
+    color: rgb(0, 0, 0);
+    font-weight: bold;    
+}
+
+.on .step-description {
+    -webkit-animation: fadeAnimation 3s infinite;
+    -moz-animation: fadeAnimation 3s infinite;
+    -o-animation: fadeAnimation 3s infinite;
+     animation: fadeAnimation 3s infinite;
+}
+
+.step-item.on:after {
+    border-color: $in-process-color !important;
+    border-left-color: transparent !important;
+}
+
+.step-item.finished {
+    background-color: $finished-color;
+    /* border-color: #8DA253; */
+    color: rgb(49, 49, 49);
+}
+
+.step-item.finished:after {
+    border-color: $finished-color !important;
+    border-left-color: transparent !important;
+}
+
+.step-item:first-child:after,
+.step-item:first-child:before {
+    content: none;
+}
+
+.step-item:first-child {
+    padding-right: 68px;
+}
+
+.step-item:last-child {
+    padding-right: 46px;
+}
+
+.step-item + .step-item {
+    padding-left: 26px;
+}
+
+.step-item + .step-item:after,
+.step-item + .step-item:before {
+    border-top: 50px solid;
+    border-bottom: 50px solid;
+    border-right: 10px solid;
+    border-color: #eee;
+    border-left: 50px solid transparent;
+    left: -60px;
+    bottom: 0;
+    content: '';
+    position: absolute;
+}
+
+.step-item + .step-item:before {
+    border-top: 50px solid;
+    border-bottom: 53px solid;
+    border-color: rgb(255, 94, 0);
+    border-left: 55px solid transparent;
+    left: -69px;
+    bottom: -2px;
+}
+
+
+@keyframes fadeAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-o-keyframes fadeAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes fadeAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes fadeAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+}
+
+.longest-step{
+    width: 30rem;
+}
+
+.small-step{
+    width: 13rem;
+}
+
+.med-step{
+    width: 17rem;
+}

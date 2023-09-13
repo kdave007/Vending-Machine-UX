@@ -1,0 +1,62 @@
+@import "styles/card.scss";
+@import "styles/buttons.scss";
+@import "styles/selection-border.scss";
+
+.flavour-container, .toast-container{
+    padding-top: 12%;
+}
+
+.features-container{
+    display: inline-block;
+    max-width: 26%;
+    max-height: 1000px
+}
+
+:host ::ng-deep .content{
+    //background-color: rgb(255, 115, 0) !important;
+    background-color: transparent !important;
+}
+
+:host ::ng-deep .content-active{
+    padding: 0;
+}
+
+:host ::ng-deep nb-layout-column{
+    padding:5px !important;
+}
+
+:host ::ng-deep nb-card{
+    //min-height: 1000px !important;    
+    background-color: transparent !important;
+    border: none !important;
+}
+
+:host ::ng-deep .tab-link{
+    color:rgb(255, 255, 255) !important;
+    outline: none !important;
+}
+
+:host ::ng-deep nb-card-header{
+    border-bottom: none !important;
+}
+
+:host ::ng-deep .tab.active .tab-link::before{
+    background-color: rgb(255, 153, 0) !important;
+}
+
+ .tab-link ::selection {
+    background: #a70808; /* WebKit/Blink Browsers */
+}
+
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+:host ::ng-deep .layout {
+    background-color: transparent !important;
+}
